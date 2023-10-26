@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\MyFleetManagerPro.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\14e4e28d-320f-4347-962a-140737a3554a_fillup-receipt 3.jpg",
+      "PackagePath": "staticwebassets\\Pictures\\14e4e28d-320f-4347-962a-140737a3554a_fillup-receipt 3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\2bf1613b-3dc0-4cd1-8da5-e746d9523185_fillup-receipt 2.jpg",
+      "PackagePath": "staticwebassets\\Pictures\\2bf1613b-3dc0-4cd1-8da5-e746d9523185_fillup-receipt 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\6fda5d37-cd59-4277-b7d7-f723344c9b04_Fillup-Receipt 4.jpg",
+      "PackagePath": "staticwebassets\\Pictures\\6fda5d37-cd59-4277-b7d7-f723344c9b04_Fillup-Receipt 4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\8fd2be18-9a73-4d5c-a4e8-64cf68aa656c_fillup-receipt 2.jpg",
+      "PackagePath": "staticwebassets\\Pictures\\8fd2be18-9a73-4d5c-a4e8-64cf68aa656c_fillup-receipt 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\ba0a02b3-8764-4f45-a075-fc6becea75dd_fillup-receipt.jpg",
+      "PackagePath": "staticwebassets\\Pictures\\ba0a02b3-8764-4f45-a075-fc6becea75dd_fillup-receipt.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

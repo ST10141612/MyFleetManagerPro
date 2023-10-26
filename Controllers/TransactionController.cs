@@ -13,9 +13,9 @@ namespace MyFleetManagerPro.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public ActionResult Index()
+        public ActionResult Index(Transaction transact)
         {
-            return View();
+            return View(transact);
         }
 
         [HttpGet]
@@ -49,10 +49,10 @@ namespace MyFleetManagerPro.Controllers
                 Poured = Convert.ToDouble(ScanData["Quantity"]),
                 Merchant = ScanData["MerchantName"]
             };
-
+            
             Console.WriteLine($"{transact.Merchant}, {transact.Spent}, {transact.TransactionDate}, {transact.Poured}");
             // tDAL.AddTransaction(transact);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index), transact);
 
 
             //return View();
@@ -80,6 +80,11 @@ namespace MyFleetManagerPro.Controllers
             filedetails["FilePath"] = filePath;
             return filedetails;
 
+        }
+
+        public ActionResult Details(int id)
+        {
+            return View();
         }
 
     }
