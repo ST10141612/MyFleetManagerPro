@@ -1,0 +1,66 @@
+﻿@model MyFleetManagerPro.ViewModels.AddTransactionViewModel
+@{
+    
+}
+<h1>Add</h1>
+
+<h4>Transaction</h4>
+<hr />
+
+<div class="col-md-10 mx-auto py-4">
+    <div class="card">
+
+        <div class="card-header bg-primary text-uppercase text-white">
+            <h4>Upload Transaction </h4>
+        </div>
+
+        <div class="card-body">
+            <form enctype="multipart/form-data" asp-action="Create">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="VehicleID" class="control-label"></label>
+                            <input asp-for="VehicleID" class="form-control" />
+                            <span asp-validation-for="VehicleID" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label asp-for="OdometerReading" class="control-label"></label>
+                        <input asp-for="OdometerReading" class="form-control" />
+                        <span asp-validation-for="OdometerReading" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="row">
+                        <div class="form-group">
+                            <label asp-for="Photo" class="control-label"></label>
+                            <div class="custom-file">
+                                <input asp-for="Photo" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose Image</label>
+                            </div>
+                            <span asp-validation-for="Photo" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="submit" class="btn btn-sm btn-primary rounded-0 text-uppercase" />
+                    @* <a asp-action="Process" class="btn btn-sm btn-primary rounded-0 text-uppercase"><i class="fas fa-fast-backward"></i> Back to List</a>*@
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

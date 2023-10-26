@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+<head>
+    <title>My Fleet Manager Pro</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        footer {
+            background-color: white;
+        }
+    </style>
+    <br />
+    <div class="col d-flex justify-content-center">
+        <div class="card text-center" style="width: 30rem; background-color: silver; ">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="color: white;">Fleet</h5>
+                <p class="card-text" style="color: white;">Add Fleet into My Fleet Manager</p>
+                <a asp-controller="Fleet" asp-action="Create" class="btn btn-danger">Continue</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="col d-flex justify-content-center">
+        <div class="card text-center" style="width: 30rem; background-color: silver; ">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="color: white;">Vehicle</h5>
+                <p class="card-text" style="color: white;">Add Vehicle into My Fleet Manager</p>
+                <a asp-controller="Vehicle" asp-action="Create" class="btn btn-danger">Continue</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="col d-flex justify-content-center">
+        <div class="card text-center" style="width: 30rem; background-color: silver; ">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="color: white;">Transaction</h5>
+                <p class="card-text" style="color: white;">Add Transaction into MtFleetManager</p>
+                <a asp-controller="Transaction" asp-action="Create" class="btn btn-danger">Continue</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="col d-flex justify-content-center">
+        <div class="card text-center" style="width: 30rem; background-color: silver; ">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="color: white;">View Transactions</h5>
+                <p class="card-text" style="color: white;">View Transactions of My Fleet Manager</p>
+                <a asp-controller="Driver" asp-action="Index" class="btn btn-danger">Continue</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="col d-flex justify-content-center">
+        <div class="card text-center" style="width: 30rem; background-color: silver; ">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="color: white;">Report</h5>
+                <p class="card-text" style="color: white;">Generate Report From MyFleetManager</p>
+                <a asp-controller="Inspector" asp-action="Index" class="btn btn-danger">Continue</a>
+            </div>
+        </div>
+    </div>
+    <br />
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿@model MyFleetManagerPro.Models.Fleet
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Fleet</h4>
+<hr />
+<div class="col d-flex justify-content-center">
+    <div class="card" style="width: 36rem; height: auto;">
+        <div class="card-body text-center">
+            <h2 class="card-title text-primary">Add Fleet</h2>
+            <p class="align-content-center">Enter Fleet Details</p>
+            <div class="container">
+                <form asp-action="Create">
+                    <div>
+                        <div class="form-group">
+                            <label asp-for="Manager" class="control-label">Manager</label>
+                            <input asp-for="Manager" class="form-control" placeholder="e.g. Masana" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="FleetName" class="control-label">Fleet Name</label>
+                            <input asp-for="FleetName" class="form-control" placeholder="e.g. Masana's Fleet" />
+                        </div>
+                        <br />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-success" value="Save" />
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-warning">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
