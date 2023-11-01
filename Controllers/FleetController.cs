@@ -1,12 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyFleetManagerPro.DAL;
+using MyFleetManagerPro.Models;
 
 namespace MyFleetManagerPro.Controllers
 {
     public class FleetController : Controller
     {
+        FleetDAL fDAL = new FleetDAL();
         public IActionResult Index()
         {
-            return View();
+            List<Fleet> fleetList = new List<Fleet>();
+            fleetList = fDAL.GetAllFleets().ToList();
+            return View(fleetList);
         }
 
         // GET: FleetController/Create
@@ -18,16 +23,14 @@ namespace MyFleetManagerPro.Controllers
         // POST: FleetController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create([Bind] Fleet fleetObj)
         {
-            try
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                fDAL.AddFleet(fleetObj);
+                return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(fleetObj);
         }
 
     }

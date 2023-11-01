@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
+            "Microsoft.Data.Analysis": {
+              "target": "Package",
+              "version": "[0.20.1, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.1, )"

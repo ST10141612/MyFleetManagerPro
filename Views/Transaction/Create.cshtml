@@ -21,7 +21,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label asp-for="VehicleID" class="control-label"></label>
-                            <input asp-for="VehicleID" class="form-control" />
+                            <select asp-for="VehicleID" class="form-select" >
+                                <option selected>Select the vehicle Registration Number</option>
+                                    @foreach (Vehicle v in ViewBag.vehicles)
+                                    {
+                                        <option value=@v.VehicleID>@v.Registration_Number</option>
+                                    }
+                            </select>
                             <span asp-validation-for="VehicleID" class="text-danger"></span>
                         </div>
                     </div>

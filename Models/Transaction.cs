@@ -7,6 +7,7 @@ namespace MyFleetManagerPro.Models
 {
     public class Transaction
     {
+        public int TransactionID { get; set; }
         public DateTime TransactionDate { get; set; }
         public int VehicleID { get; set; }
         public double Spent { get; set; }

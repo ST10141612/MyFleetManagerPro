@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyFleetManagerPro.ViewModels;
 using MyFleetManagerPro.Models;
+using MyFleetManagerPro.DAL;
 
 namespace MyFleetManagerPro.Controllers
 {
     public class TransactionController : Controller
     {
+        VehicleDAL vDAL = new VehicleDAL();
+        TransactionDAL tDAL = new TransactionDAL();
         private readonly IWebHostEnvironment _webHostEnvironment;
 
         public TransactionController(IWebHostEnvironment webHostEnvironment)
@@ -13,7 +16,7 @@ namespace MyFleetManagerPro.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public ActionResult Index(Transaction transact)
+        public ActionResult Details(Transaction transact)
         {
             return View(transact);
         }
@@ -21,6 +24,7 @@ namespace MyFleetManagerPro.Controllers
         [HttpGet]
         public ActionResult Create()
         {
+            ViewBag.vehicles = vDAL.GetAllVehicles();
             return View();
         }
 
@@ -42,8 +46,6 @@ namespace MyFleetManagerPro.Controllers
             {
                 VehicleID = transactionModel.VehicleID,
                 OdometerReading = transactionModel.OdometerReading,
-
-                // Get Data from receipt, return it in a method, input it here
                 TransactionDate = Convert.ToDateTime(ScanData["TransactionDate"]),
                 Spent = Convert.ToDouble(ScanData["Spent"]),
                 Poured = Convert.ToDouble(ScanData["Quantity"]),
@@ -51,8 +53,8 @@ namespace MyFleetManagerPro.Controllers
             };
             
             Console.WriteLine($"{transact.Merchant}, {transact.Spent}, {transact.TransactionDate}, {transact.Poured}");
-            // tDAL.AddTransaction(transact);
-            return RedirectToAction(nameof(Index), transact);
+            tDAL.AddTransaction(transact);
+            return RedirectToAction(nameof(Details), transact);
 
 
             //return View();
@@ -82,10 +84,20 @@ namespace MyFleetManagerPro.Controllers
 
         }
 
-        public ActionResult Details(int id)
+        public IActionResult Index()
         {
-            return View();
+            List <Transaction> transactions = new List<Transaction>();  
+            List<Vehicle> vehicles = new List<Vehicle>();
+
+            transactions = tDAL.GetAllTranaction().ToList();
+            vehicles = vDAL.GetAllVehicles().ToList();
+
+            var transactionView = from t in transactions
+                                  join v in vehicles on t.VehicleID equals v.VehicleID
+                                  select new AllTransactionsViewModel { transaction = t, vehicle = v };
+            return View (transactionView);
         }
 
+       
     }
 }

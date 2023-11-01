@@ -14,7 +14,7 @@ namespace MyFleetManagerPro.DAL
                 List<Driver> drivers = new List<Driver>();
                 using SqlConnection con = new SqlConnection(connectionString);
                 {
-                    SqlCommand cmd = new SqlCommand("SP_GetAllDrivers");
+                    SqlCommand cmd = new SqlCommand("SP_GetAllDrivers", con);
                     cmd.CommandType = CommandType.StoredProcedure;
                     con.Open();
                     SqlDataReader dr = cmd.ExecuteReader();

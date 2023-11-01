@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MyFleetManagerPro.DAL;
+using MyFleetManagerPro.Models;
 
 namespace MyFleetManagerPro.Controllers
 {
@@ -7,6 +9,7 @@ namespace MyFleetManagerPro.Controllers
     {
 
         // GET: DriverController/Create
+        DriverDAL dDAL = new DriverDAL();
         public ActionResult Create()
         {
             return View();
@@ -15,16 +18,21 @@ namespace MyFleetManagerPro.Controllers
         // POST: DriverController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public IActionResult Create([Bind] Driver driverObj)
         {
-            try
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                dDAL.AddDriver(driverObj);
+                return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(driverObj);
         }
+
+        public IActionResult Index ()
+        {
+            List<Driver> drivers = new List<Driver>();
+            drivers = dDAL.GetAllDrivers().ToList();
+            return View(drivers); 
+        }  
     }
 }

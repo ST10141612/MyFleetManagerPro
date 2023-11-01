@@ -1,0 +1,60 @@
+﻿@model IEnumerable<MyFleetManagerPro.Models.Report>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RegNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Spent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Poured)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvgPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.travelled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.consumption)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Spent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Poured)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AvgPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.travelled)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.consumption)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

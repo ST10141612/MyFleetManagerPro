@@ -14,7 +14,7 @@
             <h2 class="card-title text-primary">Add Vehicle</h2>
             <p class="align-content-center">Enter Vehicle Details</p>
             <div class="container">
-                <form asp-action="Driver">
+                <form asp-action="Create">
                     <div>
                         <div class="form-group">
                             <label asp-for="Registration_Number" class="control-label">Registration Number</label>
@@ -22,11 +22,24 @@
                         </div>
                         <div class="form-group">
                             <label asp-for="DriverID" class="control-label">Driver</label>
-                            <input asp-for="DriverID" class="form-control" placeholder="e.g. Masana" />
-                        </div>
+                            <select asp-for="DriverID" class="form-select" >
+                                <option selected>Select the driver of the vehicle</option>
+                                    @foreach (Driver d in ViewBag.drivers)
+                                    {
+                                        <option value=@d.DriverID>@d.DriverName</option>
+                                    }
+                            </select>
+                       </div>
+                        
                         <div class="form-group">
                             <label asp-for="FleetID" class="control-label">Fleet</label>
-                            <input asp-for="FleetID" class="form-control" placeholder="e.g. Masana's fleet" />
+                            <select asp-for="FleetID" class="form-select">
+                                <option selected>Select the fleet the vehicle belongs to</option>
+                                    @foreach (Fleet f in ViewBag.fleets)
+                                    {
+                                        <option value =@f.FleetID>@f.FleetName</option>
+                                    }
+                            </select>
                         </div>
                         <br />
                     </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hiznVUwDPyn/s6qEkNEIzBorfNSDLKukTPG40zWUl6Q=",
+  "Hash": "CL5LQQ0AvVC4uVYa2jBMH8+zvNjCnOEKrgcWPhTI9RE=",
   "Source": "MyFleetManagerPro",
   "BasePath": "_content/MyFleetManagerPro",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\0832d544-f494-4cdf-ab07-0357d9681bf0_fillup-receipt 2.jpg",
+      "SourceId": "MyFleetManagerPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\",
+      "BasePath": "_content/MyFleetManagerPro",
+      "RelativePath": "Pictures/0832d544-f494-4cdf-ab07-0357d9681bf0_fillup-receipt 2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\0832d544-f494-4cdf-ab07-0357d9681bf0_fillup-receipt 2.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\14e4e28d-320f-4347-962a-140737a3554a_fillup-receipt 3.jpg",
       "SourceId": "MyFleetManagerPro",
       "SourceType": "Discovered",
@@ -1086,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Pictures\\14e4e28d-320f-4347-962a-140737a3554a_fillup-receipt 3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\22d0d09a-c3cc-400f-9a18-201c3054ba48_Fillup-Receipt 4.jpg",
+      "SourceId": "MyFleetManagerPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\",
+      "BasePath": "_content/MyFleetManagerPro",
+      "RelativePath": "Pictures/22d0d09a-c3cc-400f-9a18-201c3054ba48_Fillup-Receipt 4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\22d0d09a-c3cc-400f-9a18-201c3054ba48_Fillup-Receipt 4.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\2bf1613b-3dc0-4cd1-8da5-e746d9523185_fillup-receipt 2.jpg",
@@ -1105,6 +1139,23 @@
       "OriginalItemSpec": "wwwroot\\Pictures\\2bf1613b-3dc0-4cd1-8da5-e746d9523185_fillup-receipt 2.jpg"
     },
     {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\4c0410be-e25f-4702-adfd-9a5a5b4c47ff_fillup-receipt.jpg",
+      "SourceId": "MyFleetManagerPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\",
+      "BasePath": "_content/MyFleetManagerPro",
+      "RelativePath": "Pictures/4c0410be-e25f-4702-adfd-9a5a5b4c47ff_fillup-receipt.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\4c0410be-e25f-4702-adfd-9a5a5b4c47ff_fillup-receipt.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\6fda5d37-cd59-4277-b7d7-f723344c9b04_Fillup-Receipt 4.jpg",
       "SourceId": "MyFleetManagerPro",
       "SourceType": "Discovered",
@@ -1120,6 +1171,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Pictures\\6fda5d37-cd59-4277-b7d7-f723344c9b04_Fillup-Receipt 4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\7eed6cb1-4fdf-4d4d-b355-16e573f95e7c_fillup-receipt 3.jpg",
+      "SourceId": "MyFleetManagerPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\",
+      "BasePath": "_content/MyFleetManagerPro",
+      "RelativePath": "Pictures/7eed6cb1-4fdf-4d4d-b355-16e573f95e7c_fillup-receipt 3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\7eed6cb1-4fdf-4d4d-b355-16e573f95e7c_fillup-receipt 3.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\8b0d5def-ee76-4456-a4a7-f15762d96b0a_fillup-receipt 3.jpg",
@@ -1156,6 +1224,40 @@
       "OriginalItemSpec": "wwwroot\\Pictures\\8fd2be18-9a73-4d5c-a4e8-64cf68aa656c_fillup-receipt 2.jpg"
     },
     {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\94259555-07bc-4373-b56c-5adc83490136_Fillup-Receipt 4.jpg",
+      "SourceId": "MyFleetManagerPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\",
+      "BasePath": "_content/MyFleetManagerPro",
+      "RelativePath": "Pictures/94259555-07bc-4373-b56c-5adc83490136_Fillup-Receipt 4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\94259555-07bc-4373-b56c-5adc83490136_Fillup-Receipt 4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\9a51c906-e6c1-4312-b3cd-45911f6d85c6_Fillup-Receipt 4.jpg",
+      "SourceId": "MyFleetManagerPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\",
+      "BasePath": "_content/MyFleetManagerPro",
+      "RelativePath": "Pictures/9a51c906-e6c1-4312-b3cd-45911f6d85c6_Fillup-Receipt 4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\9a51c906-e6c1-4312-b3cd-45911f6d85c6_Fillup-Receipt 4.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\ba0a02b3-8764-4f45-a075-fc6becea75dd_fillup-receipt.jpg",
       "SourceId": "MyFleetManagerPro",
       "SourceType": "Discovered",
@@ -1171,6 +1273,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Pictures\\ba0a02b3-8764-4f45-a075-fc6becea75dd_fillup-receipt.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\cfa6f7e9-a66a-4201-ab8d-4f4192d33440_fillup-receipt.jpg",
+      "SourceId": "MyFleetManagerPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\",
+      "BasePath": "_content/MyFleetManagerPro",
+      "RelativePath": "Pictures/cfa6f7e9-a66a-4201-ab8d-4f4192d33440_fillup-receipt.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\cfa6f7e9-a66a-4201-ab8d-4f4192d33440_fillup-receipt.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\f4d707cf-c86b-4eda-b275-15c792be3ea2_fillup-receipt 3.jpg",
+      "SourceId": "MyFleetManagerPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\",
+      "BasePath": "_content/MyFleetManagerPro",
+      "RelativePath": "Pictures/f4d707cf-c86b-4eda-b275-15c792be3ea2_fillup-receipt 3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\f4d707cf-c86b-4eda-b275-15c792be3ea2_fillup-receipt 3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\Pictures\\fddce2b2-70ad-4a87-9efd-965c19750a67_fillup-receipt 2.jpg",
+      "SourceId": "MyFleetManagerPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyFleetManagerPro\\wwwroot\\",
+      "BasePath": "_content/MyFleetManagerPro",
+      "RelativePath": "Pictures/fddce2b2-70ad-4a87-9efd-965c19750a67_fillup-receipt 2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\fddce2b2-70ad-4a87-9efd-965c19750a67_fillup-receipt 2.jpg"
     }
   ]
 }
